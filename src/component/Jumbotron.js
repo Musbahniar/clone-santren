@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import { Jumbotron, Button } from 'reactstrap';
+import BgJumbo from '../img/bgjumbotron.png'
 
 const Example = (props) => {
+    const divStyle = {
+        color: 'blue',
+        backgroundImage: BgJumbo
+    };
+
     return (
         <div>
             <Jumbotron className="text-center">
