@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { Button } from 'reactstrap';
 import Header from '../component/Header';
 import Jumbotron from '../component/Jumbotron';
 import Card from '../component/Card';
+import CardBottom from '../component/CardBottom';
 
 export default class Home extends Component {
     
@@ -37,6 +39,10 @@ export default class Home extends Component {
                         />
                     </div>
                 </div>
+                <br />
+                <div align="center"><Button outline color="success">Lihat Seluruh Kajian Koding</Button>{' '}</div>
+                <hr />
+                <CardBottom />
             </div>
         )
     }
