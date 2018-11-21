@@ -12,7 +12,7 @@ const Example = (props) => {
                     <CardTitle>{props.title}</CardTitle>
                     <CardText>{props.text}</CardText>
                     <CardText>
-                        <p className="fontSantren">Santren Koding</p>
+                        <p className="fontSantrenLeft">by Santren Koding</p>
                     </CardText>
                 </CardBody>
             </Card>
