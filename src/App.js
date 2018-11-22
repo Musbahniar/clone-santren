@@ -4,6 +4,10 @@ import './App.css';
 import Home from './counter/Home';
 
 class App extends Component {
+  componentDidMount() {
+    document.title = "Clone Santren Koding";
+  }
+
   render() {
     return (
       <div>

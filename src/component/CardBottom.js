@@ -3,10 +3,6 @@ import { Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import Logo from '../img/santrenkoding_logo.png';
 
 const Example = (props) => {
-    const divStyle = {
-        // paddingRight: '65px',
-        // paddingLeft: '65px'
-    };
     return (
     <Row >
         <Col>

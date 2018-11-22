@@ -1,6 +1,4 @@
 import React from 'react';
-// import { Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
-import Logo from '../img/santrenkoding_logo.png';
 
 const Example = (props) => {
     return (
