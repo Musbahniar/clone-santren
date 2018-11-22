@@ -12,7 +12,6 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                <Header />
                 <Jumbotron />
                 <div className="text-center"><h2>Daftar Kajian Koding Rutin</h2></div>
                 <br />
