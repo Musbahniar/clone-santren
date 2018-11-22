@@ -4,19 +4,16 @@ import Logo from '../img/santrenkoding_logo.png';
 
 const Example = (props) => {
     const divStyle = {
-        widht: '100%',
-        paddingRight: '65px',
-        paddingLeft: '65px',
-        marginRight: 'auto',
-        marginLeft: 'auto'
+        // paddingRight: '65px',
+        // paddingLeft: '65px'
     };
     return (
-    
-    <Row style={divStyle}>
+    <Row >
         <Col>
             <Card body className="text-center" body inverse color="success">
+                <CardTitle ></CardTitle>
+                <CardTitle ></CardTitle>
                 <CardTitle >Kegiatan</CardTitle>
-                <br />
                 <CardText>Koding</CardText>
                 <CardText>Belajar Agama dan Al Qur'an</CardText>
                 <CardText>Pendidikan Karakter</CardText>
