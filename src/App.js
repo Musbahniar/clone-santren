@@ -15,12 +15,18 @@ class App extends Component {
   state = {
     page: "Home"
   }
+
+  handelChangePage = (params) => {
+    this.setState ({
+      page: params
+    })
+  }
   
   render() {
     if (this.state.page=="Home") {
       return (
         <div>
-            <Header />
+            <Header ChangePage = {this.handelChangePage} />
             <Home />
         </div>
       )
@@ -28,7 +34,7 @@ class App extends Component {
     if (this.state.page=="Kajian") {
         return (
           <div>
-              <Header />
+              <Header ChangePage = {this.handelChangePage} />
               <Kajian />
           </div>
         )
@@ -36,11 +42,19 @@ class App extends Component {
     if (this.state.page=="Kitab") {
       return (
         <div>
-            <Header />
+            <Header ChangePage = {this.handelChangePage} />
             <Kitab />
         </div>
       )
-  }
+    }
+    if(this.state.page=="Mondok") {
+      return (
+        <div>
+            <Header ChangePage = {this.handelChangePage} />
+            <Mondok />
+        </div>
+      )
+    }
   }
 }
 

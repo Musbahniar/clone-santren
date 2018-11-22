@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { Jumbotron, Button } from 'reactstrap';
-import BgJumbo from '../img/bgjumbotron.png'
+import BgJumbo from '../img/bgjumbotron.png';
 
 const Example = (props) => {
     const divStyle = {
-        color: 'blue',
-        backgroundImage: BgJumbo
+        color: 'black',
+        backgroundImage: 'url(' + BgJumbo + ')',
+        backgroundSize: 'cover'
     };
 
     return (
         <div>
-            <Jumbotron className="text-center">
+            <Jumbotron className="text-center" style={divStyle}>
                 <h1 className="display-3">Santren Koding</h1>
                 <p className="lead">Intensive Coding Bootcamp for Yatim & Dhuafa</p>
                 <p className="lead">

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
-import Header from '../component/Header';
 import Jumbotron from '../component/Jumbotron';
 import Card from '../component/Card';
 import CardBottom from '../component/CardBottom';
