@@ -21,17 +21,17 @@ export default class Header extends Component {
         return (
             <div>
                 <Navbar color="light" light expand="md">
-                <NavbarBrand onClick = {()=> this.props.ChangePage("Home")}><img src={Logo} height="64"></img></NavbarBrand>
-                <NavbarBrand onClick = {()=> this.props.ChangePage("Home")}>Santren Koding</NavbarBrand>
+                <NavbarBrand href="#" onClick = {()=> this.props.ChangePage("Home")}><img src={Logo} height="64"></img></NavbarBrand>
+                <NavbarBrand href="#" onClick = {()=> this.props.ChangePage("Home")}>Santren Koding</NavbarBrand>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink onClick = {()=> this.props.ChangePage("Kajian")}>Kajian Koding</NavLink>
+                            <NavLink href="#" onClick = {()=> this.props.ChangePage("Kajian")}>Kajian Koding</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink onClick = {()=> this.props.ChangePage("Mondok")}>Mondok Koding</NavLink>
+                            <NavLink href="#" onClick = {()=> this.props.ChangePage("Mondok")}>Mondok Koding</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink onClick = {()=> this.props.ChangePage("Kitab")}>Kitab Koding</NavLink>
+                            <NavLink href="#" onClick = {()=> this.props.ChangePage("Kitab")}>Kitab Koding</NavLink>
                         </NavItem>
                         <Button outline color="primary">Masuk/Daftar</Button>{' '}
                     </Nav>
