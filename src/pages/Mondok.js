@@ -28,8 +28,8 @@ export default class Mondok extends Component {
               <div className="row">
                 <div className="col-6">enam</div>
                 <div className="col-6">
-                 <h4>Fasilitas</h4>
-                 <ul className="list-unstyled">
+                <h4>Fasilitas</h4>
+                <ul className="list-unstyled">
                         <li>GRATIS BIAYA PENDIDIKAN</li>
                         <li>GRATIS UANG MAKAN DAN ASRAMA</li>
                         <li>TEMPAT BELAJAR YANG NYAMAN</li>
