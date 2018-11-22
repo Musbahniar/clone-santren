@@ -18,7 +18,7 @@ const Example = (props) => {
         <Col>
             <Card body className="text-center">
                 <CardTitle ><img src={Logo}></img></CardTitle>
-                <CardTitle> <h3>"Memberi Manfaat Untuk Ummmat"</h3></CardTitle>
+                <CardTitle> <h3>"Memberi Manfaat Untuk Ummat"</h3></CardTitle>
             </Card>
         </Col>
     </Row>

@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   state = {
-    page: "Home"
+    page: "Mondok"
   }
 
   handelChangePage = (params) => {
