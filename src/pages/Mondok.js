@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Jumbotron, Button } from 'reactstrap';
 import Logo from '../img/santrenkoding_logo.png';
 import Poster from '../img/poster.jpg';
-import { Container, Row, Col } from 'reactstrap';
+import Footer from '../component/Footer';
 
 export default class Mondok extends Component {
   render() {
@@ -26,20 +26,42 @@ export default class Mondok extends Component {
             </div>
             <div className="container">
               <div className="row">
-                <div className="col-6">enam</div>
+                <div className="col-6" align="center"><img src = {Poster} height="520"></img></div>
                 <div className="col-6">
-                <h4>Fasilitas</h4>
-                <ul className="list-unstyled">
+                    <h4>Fasilitas</h4>
+                    <ul>
                         <li>GRATIS BIAYA PENDIDIKAN</li>
                         <li>GRATIS UANG MAKAN DAN ASRAMA</li>
                         <li>TEMPAT BELAJAR YANG NYAMAN</li>
                         <li>RIHLAH 2 BULAN SEKALI</li>
                     </ul>  
                     <br />
-                    <h4>Fasilitas</h4>
+                    <h4>Persyaratan</h4>
+                    <ul>
+                        <li>MUSLIM</li>
+                        <li>LAKI-LAKI (USIA MAKS 19TH)</li>
+                        <li>MENGINAP/TINGGAL DI ASRAMA</li>
+                        <li>BUKAN YANG MENGHALALKAN ROKOK</li>
+                        <li>BERSUNGGUH-SUNGGUH</li>
+                        <li>MEMPUNYAI LAPTOP</li>
+                        <li>WAJIB HOBI NGODING</li>
+                        <li>SIAP BELAJAR 16 JAM/HARI</li>
+                    </ul>  
+                    <br />
+                    <h4>Periode</h4>
+                    <ul>
+                        <li>PERIODE 1: Pendaftaran Tutup 18 Maret 2018</li>
+                        <li>PERIODE 2: Pendaftaran Tutup 31 Mei 2018</li>
+                        <li>PERIODE 3: Coming soon...</li>
+                        <li>Muslimah (Untuk Perempuan): Coming soon...</li>
+                    </ul>  
+                </div>
+                <div className="container">
+                <Button color="success" size="lg" >Daftar Sekarang</Button>{' '}
                 </div>
               </div>
             </div>
+            <Footer />
       </div>
     )
   }
