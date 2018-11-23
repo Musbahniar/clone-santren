@@ -6,15 +6,14 @@ import Home from './pages/Home';
 import Kajian from './pages/Kajian';
 import Kitab from './pages/Kitab';
 import Mondok from './pages/Mondok';
+import NotFound from './component/NotFound';
+import {Route, Switch} from 'react-router-dom';
 
 class App extends Component {
   componentDidMount() {
     document.title = "Clone Santren Koding";
   }
 
-  state = {
-    page: "Mondok"
-  }
 
   handelChangePage = (params) => {
     this.setState ({
@@ -23,38 +22,18 @@ class App extends Component {
   }
   
   render() {
-    if (this.state.page=="Home") {
-      return (
-        <div>
-            <Header ChangePage = {this.handelChangePage} />
-            <Home />
-        </div>
-      )
-    }
-    if (this.state.page=="Kajian") {
-        return (
-          <div>
-              <Header ChangePage = {this.handelChangePage} />
-              <Kajian />
-          </div>
-        )
-    }
-    if (this.state.page=="Kitab") {
-      return (
-        <div>
-            <Header ChangePage = {this.handelChangePage} />
-            <Kitab />
-        </div>
-      )
-    }
-    if(this.state.page=="Mondok") {
-      return (
-        <div>
-            <Header ChangePage = {this.handelChangePage} />
-            <Mondok />
-        </div>
-      )
-    }
+    return (
+      <div>
+        <Header />
+        <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/kajian" component={Kajian} />
+        <Route path="/mondok" component={Mondok} />
+        <Route path="/kitab" component={Kitab} />
+        <Route component={NotFound} />
+        </Switch>
+      </div>
+    )
   }
 }
 
