@@ -13,13 +13,6 @@ class App extends Component {
   componentDidMount() {
     document.title = "Clone Santren Koding";
   }
-
-
-  handelChangePage = (params) => {
-    this.setState ({
-      page: params
-    })
-  }
   
   render() {
     return (
