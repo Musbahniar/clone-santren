@@ -13,6 +13,7 @@ import {
     DropdownMenu,
     DropdownItem } from 'reactstrap';
 import Logo from '../img/santrenkoding_logo.png';
+import {Link} from 'react-router-dom';
 
 export default class Header extends Component {
 
@@ -21,17 +22,17 @@ export default class Header extends Component {
         return (
             <div>
                 <Navbar color="light" light expand="md">
-                <NavbarBrand href="#" onClick = {()=> this.props.ChangePage("Home")}><img src={Logo} height="64"></img></NavbarBrand>
-                <NavbarBrand href="#" onClick = {()=> this.props.ChangePage("Home")}>Santren Koding</NavbarBrand>
+                <NavbarBrand href="/" ><img src={Logo} height="64"></img></NavbarBrand>
+                <NavbarBrand href="/" >Santren Koding</NavbarBrand>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink href="#" onClick = {()=> this.props.ChangePage("Kajian")}>Kajian Koding</NavLink>
+                            <Link to ="/kajian"><NavLink>Kajian Koding</NavLink></Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#" onClick = {()=> this.props.ChangePage("Mondok")}>Mondok Koding</NavLink>
+                            <Link to ="/mondok"><NavLink>Mondok Koding</NavLink></Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#" onClick = {()=> this.props.ChangePage("Kitab")}>Kitab Koding</NavLink>
+                            <Link to ="/kitab"><NavLink>Kitab Koding</NavLink></Link>
                         </NavItem>
                         <Button outline color="primary">Masuk/Daftar</Button>{' '}
                     </Nav>
