@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
-import { Button } from 'reactstrap';
-import Header from '../component/Header';
-import Jumbotron from '../component/Jumbotron';
 import Card from '../component/Card';
-import CardBottom from '../component/CardBottom';
-import Kontak from '../component/Contact';
 import Footer from '../component/Footer';
 
-export default class Home extends Component {
+export default class Kajian extends Component {
     
     render() {
         return (
             <div>
-                <Header />
-                <Jumbotron />
                 <div className="text-center"><h2>Daftar Kajian Koding Rutin</h2></div>
                 <br />
                 <div className="container">
@@ -36,12 +29,6 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <br />
-                <div align="center"><Button outline color="success">Lihat Seluruh Kajian Koding</Button>{' '}</div>
-                <hr />
-                <div className="container">
-                <CardBottom />
-                <Kontak />
-                </div>
                 <Footer />
             </div>
         )
