@@ -22,7 +22,7 @@ export default class Header extends Component {
             <div>
                 <Navbar color="light" light expand="md">
                 <NavbarBrand href="#" onClick = {()=> this.props.ChangePage("Home")}><img src={Logo} height="64"></img></NavbarBrand>
-                <NavbarBrand href="#" onClick = {()=> this.props.ChangePage("Home")}>Santren Koding</NavbarBrand>
+                <NavbarBrand href="#" onClick = {()=> this.props.ChangePage("Home")}>Santren Koding Ubah</NavbarBrand>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
                             <NavLink href="#" onClick = {()=> this.props.ChangePage("Kajian")}>Kajian Koding</NavLink>
