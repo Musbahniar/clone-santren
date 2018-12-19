@@ -27,7 +27,7 @@ export default class Home extends Component {
                             />
                         </div>
                         <div className="col-12 col-sm-12 col-md-6 col-lg-4">
-                            <Card  title="Kajian Koding #1" text="Belajar Laravel Dasar" 
+                            <Card  title="Kajian Koding #1" text="Belajar Laravel DasarEdit" 
                                 img = "https://lh5.googleusercontent.com/Nw8x_CE9s4N8WGggkhxit5nHdo8j03kr0daRbRTRhduOtJzwmaw3h-iR0T4iBiXrEyQqN-q_VA=w3572"
                             />
                         </div>
