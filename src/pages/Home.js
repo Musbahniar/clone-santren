@@ -34,7 +34,7 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <br />
-                <div align="center"><Button outline color="success">Lihat Seluruh Kajian Koding</Button>{' '}</div>
+                <div align="center"><Button outline color="success">Lihat Seluruh Kajian Koding Coba lagi</Button>{' '}</div>
                 <hr />
                 <div className="container">
                 <CardBottom />
