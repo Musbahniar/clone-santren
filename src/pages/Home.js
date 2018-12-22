@@ -12,7 +12,7 @@ export default class Home extends Component {
         return (
             <div>
                 <Jumbotron />
-                <div className="text-center"><h2>Daftar Kajian Koding Rutin</h2></div>
+                <div className="text-center"><h2>Daftar Kajian Koding Rutin Hanti</h2></div>
                 <br />
                 <div className="container">
                     <div className="row" >
